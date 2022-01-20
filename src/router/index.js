@@ -63,7 +63,7 @@ export const constantRoutes = [
       path: '1',
       name: 'FrontPage',
       component: () => import('@/views/front-page/index'),
-      meta: { title: '首页', icon: 'dashboard' }
+      meta: { title: '首页', icon: 'el-icon-menu' }
     }]
   },
 
