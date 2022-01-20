@@ -56,6 +56,18 @@ export const constantRoutes = [
   },
 
   {
+    path: '/front-page',
+    component: Layout,
+    // redirect: '/dashboard',
+    children: [{
+      path: '1',
+      name: 'FrontPage',
+      component: () => import('@/views/front-page/index'),
+      meta: { title: '首页', icon: 'dashboard' }
+    }]
+  },
+
+  {
     path: '/example',
     component: Layout,
     redirect: '/example/table',
